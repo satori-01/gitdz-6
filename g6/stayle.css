@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #007bff;
+    padding: 20px;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+}
+
+#newtask {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#newtask input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background-color: transparent;
+    color: #2f0b0b;
+    outline: none;
+}
+
+#newtask button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+#newtask button:hover {
+    background-color: #218838;
+}
+
+#tasks {
+    display: flex;
+    flex-direction: column;
+    background-color: #0e0f4b;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c2f77;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.task span {
+    flex: 1;
+    color: #fff;
+    font-size: 16px;
+}
+
+.delete,
+.edit {
+    color: #fff;
+   
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+    width: 50px; 
+height: 51px;
+}
+
+.delete:hover,
+.edit:hover {
+    color: #ff4848;
+}
+
+/* Добавленный стиль для кнопки "edit" */
+.edit {
+    color: #33ff00;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.edit:hover {
+    color: #f9a825;
+}
+
+/* Добавленный стиль для иконки карандаша в кнопке "edit" */
+.edit i {
+    font-size: 14px;
+}
+
+/* Добавленный стиль для кнопки "delete" */
+.delete {
+    color: #ec0000;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+
+}
+
+.delete:hover {
+    color: #dc3545;
+}
+
+/* Добавленный стиль для иконки корзины в кнопке "delete" */
+.delete i {
+    font-size: 14px;
+}
